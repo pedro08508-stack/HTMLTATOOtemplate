@@ -1,0 +1,637 @@
+/* ==================================================================
+   VARIACOES FACIL DE EDITAR (cores/tema) → procure por "COR_"
+   ------------------------------------------------------------------
+   --cor-acento    : cor vibrante (vermelho, roxo ou verde neon)
+   --cor-fundo     : fundo principal (preto/grafite)
+   --cor-texto     : cor dos textos
+   ================================================================== */
+
+:root {
+  /* COR_ACENTO: acento vibrante para botoes e detalhes (padrao: vermelho-tinta) */
+  --cor-acento: #ff3131;
+  --cor-acento-escuro: #d62626;
+  --cor-acento-suave: rgba(255, 49, 49, 0.14);
+
+  /* COR_FUNDO: tons escuros (preto/grafite) */
+  --cor-fundo: #0b0b0d;
+  --cor-fundo-2: #121215;
+  --cor-fundo-3: #18181c;
+
+  /* COR_TEXTO */
+  --cor-texto: #f4f2ec;
+  --cor-texto-suave: #a3a1a0;
+  --cor-borda: #26262b;
+
+  --font-titulo: "Bebas Neue", sans-serif;
+  --font-corpo: "Inter", sans-serif;
+}
+
+/* ==================== BASE ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--font-corpo);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--cor-acento);
+  color: #111;
+}
+
+/* ==================== BOTOES ==================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--cor-acento);
+  color: #fff;
+  font-family: var(--font-corpo);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  padding: 0.85rem 1.6rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: var(--cor-acento-escuro);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 49, 49, 0.3);
+}
+
+.btn-small {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.85rem;
+}
+
+.btn-hero {
+  font-size: 1.05rem;
+  padding: 1rem 1.8rem;
+  animation: pulse 2.6s infinite;
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(255, 49, 49, 0.35); }
+  70%  { box-shadow: 0 0 0 16px rgba(255, 49, 49, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 49, 49, 0); }
+}
+
+.icon {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem clamp(1rem, 5vw, 4rem);
+  background: rgba(11, 11, 13, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(11, 11, 13, 0.92);
+  border-bottom-color: var(--cor-borda);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--font-titulo);
+  font-size: 1.15rem;
+  letter-spacing: 0.1em;
+}
+
+.navbar-logo {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  background: var(--cor-acento);
+  color: #fff;
+  font-family: var(--font-titulo);
+  font-size: 1.1rem;
+  border-radius: 9px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.navbar-links a {
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--cor-acento);
+}
+
+/* ==================== HERO ==================== */
+.hero {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 7rem clamp(1.25rem, 5vw, 4rem) 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* brilho decorativo de fundo */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(600px 400px at 80% 10%, rgba(255, 49, 49, 0.12), transparent 60%),
+    radial-gradient(500px 400px at 5% 90%, rgba(255, 49, 49, 0.07), transparent 60%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 860px;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-corpo);
+  font-size: 0.8rem;
+  letter-spacing: 0.32em;
+  color: var(--cor-acento);
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+}
+
+.hero-title {
+  font-family: var(--font-titulo);
+  font-weight: 400;
+  font-size: clamp(5rem, 16vw, 11rem);
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+}
+
+.accent {
+  color: var(--cor-acento);
+}
+
+.hero-tagline {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  letter-spacing: 0.06em;
+  color: var(--cor-texto);
+  margin: 0.4rem 0 2.2rem;
+}
+
+.hero-badges {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-texto-suave);
+  letter-spacing: 0.06em;
+}
+
+.hero-badges span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ==================== SEÇÕES GERAL ==================== */
+.portfolio,
+.about,
+.contact {
+  padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 5vw, 4rem);
+}
+
+.section-head {
+  margin-bottom: 2.5rem;
+}
+
+.section-eyebrow {
+  font-family: var(--font-corpo);
+  font-size: 0.8rem;
+  letter-spacing: 0.35em;
+  color: var(--cor-acento);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.section-title {
+  font-family: var(--font-titulo);
+  font-weight: 400;
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+/* ==================== PORTFOLIO (abas + grid) ==================== */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+  background: transparent;
+  color: var(--cor-texto-suave);
+  border: 1px solid var(--cor-borda);
+  border-radius: 999px;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: var(--cor-texto);
+  border-color: rgba(255, 49, 49, 0.5);
+}
+
+.filter-btn.active {
+  background: var(--cor-acento);
+  color: #fff;
+  border-color: var(--cor-acento);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--cor-fundo-3);
+  border: 1px solid var(--cor-borda);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transform: scale(1.01);
+  transition: transform 0.5s ease, filter 0.5s ease, opacity 0.35s ease;
+}
+
+.card figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2.2rem 1.1rem 1.1rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.88));
+  font-family: var(--font-corpo);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--cor-acento);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  mix-blend-mode: soft-light;
+}
+
+/* hover leve em desktop */
+@media (hover: hover) {
+  .card:hover img {
+    transform: scale(1.06);
+    filter: brightness(0.9);
+  }
+
+  .card:hover::after {
+    opacity: 0.5;
+  }
+}
+
+/* cards escondidos pelo filtro */
+.card.hidden {
+  display: none;
+}
+
+/* animacao ao trocar de aba */
+.card.fading {
+  animation: fadeCat 0.45s ease;
+}
+
+@keyframes fadeCat {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ==================== SOBRE ==================== */
+.about {
+  background: var(--cor-fundo-2);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.about-paragraph {
+  color: var(--cor-texto-suave);
+  margin-top: 1.2rem;
+  max-width: 54ch;
+}
+
+.about-paragraph strong {
+  color: var(--cor-texto);
+}
+
+.about-text .btn {
+  margin-top: 1.8rem;
+}
+
+.about-media {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--cor-borda);
+}
+
+.about-media img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+@media (hover: hover) {
+  .about-media:hover img {
+    transform: scale(1.04);
+  }
+}
+
+/* ==================== CONTATO ==================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background: var(--cor-fundo-3);
+  border: 1px solid var(--cor-borda);
+  border-radius: 14px;
+  padding: 1.8rem;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 49, 49, 0.4);
+}
+
+.contact-card-title {
+  font-family: var(--font-titulo);
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.7rem;
+  color: var(--cor-acento);
+}
+
+.contact-text {
+  color: var(--cor-texto-suave);
+  margin-bottom: 1rem;
+}
+
+.link-arrow {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.link-arrow:hover {
+  color: var(--cor-acento);
+  transform: translateX(4px);
+}
+
+.hours {
+  list-style: none;
+}
+
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--cor-borda);
+  font-size: 0.92rem;
+}
+
+.hours li span:last-child {
+  color: var(--cor-texto-suave);
+  font-weight: 500;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.8rem 1.3rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.social-btn:hover {
+  border-color: var(--cor-acento);
+  color: var(--cor-acento);
+}
+
+/* ==================== RODAPE ==================== */
+.footer {
+  text-align: center;
+  padding: 3.5rem clamp(1.25rem, 5vw, 4rem);
+  border-top: 1px solid var(--cor-borda);
+}
+
+.footer-name {
+  font-family: var(--font-titulo);
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.4rem;
+}
+
+.footer-year {
+  color: var(--cor-texto-suave);
+  font-size: 0.85rem;
+  margin-bottom: 1.6rem;
+}
+
+/* ==================== BOTAO FLUTUANTE WHATSAPP ==================== */
+.whatsapp-float {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-float .icon {
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+}
+
+.whatsapp-float::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid #25d366;
+  animation: ring 2.4s ease-out infinite;
+}
+
+@keyframes ring {
+  0%   { transform: scale(1);    opacity: 0.7; }
+  100% { transform: scale(1.7);  opacity: 0; }
+}
+
+/* ==================== MICRO-ANIMACOES (fade-in ao rolar) ==================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* hero anima na carga sem precisar rolar */
+.hero .hero-content > * {
+  opacity: 0;
+  animation: rise 0.8s ease forwards;
+}
+
+.hero .hero-content > *:nth-child(1) { animation-delay: 0.1s; }
+.hero .hero-content > *:nth-child(2) { animation-delay: 0.25s; }
+.hero .hero-content > *:nth-child(3) { animation-delay: 0.4s; }
+.hero .hero-content > *:nth-child(4) { animation-delay: 0.55s; }
+
+.hero .hero-badges {
+  opacity: 0;
+  animation: rise 0.8s ease 0.7s forwards;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ==================== RESPONSIVO ==================== */
+@media (max-width: 640px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 6rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+/* respeita usuarios que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
