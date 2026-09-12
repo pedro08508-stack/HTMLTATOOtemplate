@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SANTO TRAÇO TATTOO STUDIO | Arte & Tatuagem Autoral</title>
+    <meta name="description" content="Estúdio de tatuagem autoral em São Paulo. Especialistas em Fine Line, Realismo, Blackwork e Old School. Atendimento exclusivo e agendamento via WhatsApp." />
+    <meta property="og:title" content="SANTO TRAÇO TATTOO STUDIO" />
+    <meta property="og:description" content="Tatuagens autorais em Fine Line, Realismo, Blackwork e Old School. Estética refinada e atendimento sob agendamento." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Oswald (Sans-serif bold condensada) e Plus Jakarta Sans (Corpo de texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Estilo Dark Elegante & Editorial -->
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="logo-brand" id="logoBrand">
+          <span class="logo-text">SANTO<span>TRAÇO</span></span>
+        </a>
+
+        <nav aria-label="Navegação Principal">
+          <ul class="nav-menu">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Localização</a></li>
+            <li>
+              <a href="https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20tatuagem." target="_blank" rel="noopener noreferrer" class="btn-editorial" id="headerCtaBtn">
+                Agendar Horário
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. HERO -->
+      <section class="hero-section" id="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content fade-up">
+              <span class="hero-tagline">Estúdio Autoral &bull; São Paulo</span>
+
+              <h1 class="hero-title">
+                SANTO TRAÇO
+                <span class="title-gold">TATTOO STUDIO</span>
+              </h1>
+
+              <div class="diamonds-separator align-left" aria-hidden="true">
+                ◇ ◇ ◇ ◇ ◇
+              </div>
+
+              <!-- Slogan editorial com palavras-chave em destaque -->
+              <p class="hero-slogan">
+                Design de precisão e arte permanente. Criamos projetos <span class="text-gold">exclusivos</span> gravados com rigor técnico, anatomia equilibrada e <span class="text-white">elegância atemporal</span>.
+              </p>
+
+              <div class="hero-actions">
+                <a href="https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20tatuagem%20ou%20pedir%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-editorial" id="heroWhatsappCta">
+                  Conversar no WhatsApp
+                </a>
+                <a href="#portfolio" class="btn-editorial btn-editorial-outline" id="heroPortfolioCta">
+                  Explorar Portfólio
+                </a>
+              </div>
+
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number">+10</span>
+                  <span class="stat-label">Anos de experiência</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Normas hospitalares</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">04</span>
+                  <span class="stat-label">Estilos consolidados</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual fade-up">
+              <div class="hero-card-frame">
+                <img src="./public/images/oldschool-1.jpg" alt="Destaque de projeto autoral em preto e branco" id="heroFeaturedImage" />
+                <div class="hero-card-caption">
+                  <div>
+                    <h4>LUCAS "RAVEN" COSTA</h4>
+                    <p style="font-size: 0.78rem; color: var(--text-muted);">Artista residente & criador</p>
+                  </div>
+                  <span>Projetos Exclusivos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VÍDEO DE APRESENTAÇÃO (VERTICAL, AUTOPLAY) -->
+      <section class="video-section" id="video-apresentacao">
+        <div class="container">
+          <div class="video-header fade-up">
+            <span class="section-tag">Experiência Real</span>
+            <h2>O ESTÚDIO EM AÇÃO</h2>
+            <div class="diamonds-separator" aria-hidden="true">
+              ◇ ◇ ◇ ◇ ◇
+            </div>
+            <p class="text-muted">
+              Dê o play e acompanhe o processo criativo do estúdio em primeira pessoa, antes mesmo de agendar sua sessão.
+            </p>
+          </div>
+
+          <div class="video-stage fade-up">
+            <div class="video-frame">
+              <video
+                src="./public/videos/tatooexemplo.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                controls
+                class="video-player"
+              ></video>
+            </div>
+
+            <div class="video-badge">
+              <span class="video-badge-dot" aria-hidden="true"></span>
+              Método Santo Traço
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. SOBRE / APRESENTAÇÃO -->
+      <section class="about-section" id="sobre">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-visual fade-up">
+              <div class="about-frame">
+                <img src="./public/images/artist.jpg" alt="Retrato do tatuador Lucas Raven no estúdio" id="aboutArtistPhoto" />
+              </div>
+            </div>
+
+            <div class="about-content fade-up">
+              <span class="section-tag">Apresentação</span>
+              <h2 class="about-title">ARTE DEFINITIVA COM DISCIPLINA E PRECISÃO</h2>
+
+              <div class="diamonds-separator align-left" aria-hidden="true">
+                ◇ ◇ ◇ ◇ ◇
+              </div>
+
+              <p class="about-body">
+                Comandado por <strong>Lucas "Raven" Costa</strong>, o <strong>Santo Traço Tattoo Studio</strong> foi concebido para atender clientes que buscam uma experiência personalizada, sóbria e artisticamente rigorosa.
+              </p>
+
+              <p class="about-body">
+                Cada trabalho tem base em estudos anatômicos detalhados, valorizando o caimento e o envelhecimento harmonioso do pigmento na pele. Desenvolvemos designs exclusivos a partir de uma escuta atenta das referências e ideias de cada cliente.
+              </p>
+
+              <!-- Pilares com Ícones Line Dourados -->
+              <div class="about-pillars-grid">
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                  </div>
+                  <h4>Biossegurança Rigorosa</h4>
+                  <p>Insumos estéreis e descartáveis em ambiente certificado pela vigilância sanitária.</p>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <h4>Projetos Sob Medida</h4>
+                  <p>Criações pensadas de forma individualizada, respeitando a curvatura anatômica.</p>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <h4>Atendimento Reservado</h4>
+                  <p>Sessões com hora marcada, garantindo privacidade, foco e tranquilidade total.</p>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                      <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                  </div>
+                  <h4>Acompanhamento Pós-Sessão</h4>
+                  <p>Protocolo completo de cicatrização com orientação técnica contínua.</p>
+                </div>
+              </div>
+
+              <div>
+                <a href="https://wa.me/5511998765432?text=Ol%C3%A1%20Lucas!%20Gostaria%20de%20apresentar%20uma%20ideia%20de%20tatuagem." target="_blank" rel="noopener noreferrer" class="btn-editorial" id="aboutWhatsappBtn">
+                  Conversar com o Artista
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. PORTFÓLIO — ORGANIZADO POR ESTILO -->
+      <section class="portfolio-section" id="portfolio">
+        <div class="container">
+          <div class="portfolio-header fade-up">
+            <span class="section-tag">Galeria de Trabalhos</span>
+            <h2>PORTFÓLIO POR ESTILOS</h2>
+            <div class="diamonds-separator" aria-hidden="true">
+              ◇ ◇ ◇ ◇ ◇
+            </div>
+            <p class="text-muted">
+              Explore os quatro pilares artísticos do estúdio. Cada imagem foi desenvolvida respeitando as características fundamentais de traço, sombra e contraste de cada modalidade.
+            </p>
+          </div>
+
+          <!-- Filtros de Navegação Limpos e Simétricos -->
+          <div class="portfolio-filter-nav fade-up" id="portfolioFilterNav">
+            <button type="button" class="filter-btn active" data-filter="all" id="btnFilterAll">
+              Todos os Estilos
+            </button>
+            <button type="button" class="filter-btn" data-filter="fineline" id="btnFilterFineline">
+              Fine Line
+            </button>
+            <button type="button" class="filter-btn" data-filter="realismo" id="btnFilterRealismo">
+              Realismo
+            </button>
+            <button type="button" class="filter-btn" data-filter="blackwork" id="btnFilterBlackwork">
+              Blackwork
+            </button>
+            <button type="button" class="filter-btn" data-filter="oldschool" id="btnFilterOldschool">
+              Old School
+            </button>
+          </div>
+
+          <!-- Grid Simétrico e Balanceado de 4 Colunas -->
+          <div class="portfolio-grid-clean" id="portfolioGrid">
+            <!-- 1. Fine Line 1 -->
+            <article class="portfolio-card fade-up" data-category="fineline" id="cardFineline1">
+              <div class="portfolio-image-wrapper">
+                <img src="./public/images/fineline-1.jpg" alt="Tatuagem Fine Line botânica e fase lunar" loading="lazy" />
+              </div>
+              <div class="portfolio-card-info">
+                <span class="card-category-tag">Fine Line</span>
+                <h3 class="card-title">Botânica Lunar</h3>
+                <p class="card-description">Traços finos e minimalistas em preto e branco executados com agulha de precisão cirúrgica.</p>
+                <span class="card-cta-link">Ver detalhes &rarr;</span>
+              </div>
+            </article>
+
+            <!-- 2. Realismo 1 -->
+            <article class="portfolio-card fade-up" data-category="realismo" id="cardRealismo1">
+              <div class="portfolio-image-wrapper">
+                <img src="./public/images/realism-1.jpg" alt="Tatuagem de realismo em preto e cinza com rosto de leão" loading="lazy" />
+              </div>
+              <div class="portfolio-card-info">
+                <span class="card-category-tag">Realismo</span>
+                <h3 class="card-title">Retrato Selvagem</h3>
+                <p class="card-description">Alto contraste e sombreado detalhado, proporcionando volume e fidelidade fotográfica.</p>
+                <span class="card-cta-link">Ver detalhes &rarr;</span>
+              </div>
+            </article>
+
+            <!-- 3. Blackwork 1 -->
+            <article class="portfolio-card fade-up" data-category="blackwork" id="cardBlackwork1">
+              <div class="portfolio-image-wrapper">
+                <img src="./public/images/blackwork-1.jpg" alt="Tatuagem blackwork com mandala geométrica" loading="lazy" />
+              </div>
+              <div class="portfolio-card-info">
+                <span class="card-category-tag">Blackwork</span>
+                <h3 class="card-title">Geometria Sagrada</h3>
+                <p class="card-description">Preenchimento sólido preto e padrões ornamentais com pontilhismo de alta densidade.</p>
+                <span class="card-cta-link">Ver detalhes &rarr;</span>
+              </div>
+            </article>
+
+            <!-- 4. Old School 1 -->
+            <article class="portfolio-card fade-up" data-category="oldschool" id="cardOldschool1">
+              <div class="portfolio-image-wrapper">
+                <img src="./public/images/oldschool-1.jpg" alt="Tatuagem clássica old school de adaga e rosa" loading="lazy" />
+              </div>
+              <div class="portfolio-card-info">
+                <span class="card-category-tag">Old School</span>
+                <h3 class="card-title">Adaga Tradicional</h3>
+                <p class="card-description">Contornos pesados marcantes e imagética clássica atemporal com máxima legibilidade.</p>
+                <span class="card-cta-link">Ver detalhes &rarr;</span>
+              </div>
+            </article>
+
+            <!-- 5. Fine Line 2 -->
+            <article class="portfolio-card fade-up" data-category="fineline" id="cardFineline2">
+              <div class="portfolio-image-wrapper">
+                <img src="./public/images/fineline-2.jpg" alt="Tatuagem fine line de mariposa e folhagens" loading="lazy" />
+              </div>
+              <div class="portfolio-card-info">
+                <span class="card-category-tag">Fine Line</span>
+                <h3 class="card-title">Mariposa Esfinge</h3>
+                <p class="card-description">Linhas fluidas de espessura micrométrica com hachuras sutis em preto e cinza.</p>
+                <span class="card-cta-link">Ver detalhes &rarr;</span>
+              </div>
+            </article>
+
+            <!-- 6. Realismo 2 -->
+            <article class="portfolio-card fade-up" data-category="realismo" id="cardRealismo2">
+              <div class="portfolio-image-wrapper">
+                <img src="./public/images/realism-2.jpg" alt="Tatuagem de realismo com escultura clássica" loading="lazy" />
+              </div>
+              <div class="portfolio-card-info">
+                <span class="card-category-tag">Realismo</span>
+                <h3 class="card-title">Busto Clássico</h3>
+                <p class="card-description">Transição aveludada de tonalidades, textura de mármore e iluminação cinematográfica.</p>
+                <span class="card-cta-link">Ver detalhes &rarr;</span>
+              </div>
+            </article>
+
+            <!-- 7. Blackwork 2 -->
+            <article class="portfolio-card fade-up" data-category="blackwork" id="cardBlackwork2">
+              <div class="portfolio-image-wrapper">
+                <img src="./public/images/blackwork-2.jpg" alt="Tatuagem blackwork de crânio ancestral" loading="lazy" />
+              </div>
+              <div class="portfolio-card-info">
+                <span class="card-category-tag">Blackwork</span>
+                <h3 class="card-title">Crânio Ancestral</h3>
+                <p class="card-description">Solidez de preto absoluto, gravura medieval e impacto visual de alto calibre.</p>
+                <span class="card-cta-link">Ver detalhes &rarr;</span>
+              </div>
+            </article>
+
+            <!-- 8. Old School 2 -->
+            <article class="portfolio-card fade-up" data-category="oldschool" id="cardOldschool2">
+              <div class="portfolio-image-wrapper">
+                <img src="./public/images/oldschool-2.jpg" alt="Tatuagem tradicional de embarcação em tempestade" loading="lazy" />
+              </div>
+              <div class="portfolio-card-info">
+                <span class="card-category-tag">Old School</span>
+                <h3 class="card-title">Navio Pirata</h3>
+                <p class="card-description">Composição náutica tradicional com traço grosso característico e sombras sólidas.</p>
+                <span class="card-cta-link">Ver detalhes &rarr;</span>
+              </div>
+            </article>
+          </div>
+
+          <div style="text-align: center; margin-top: 3.5rem;" class="fade-up">
+            <a href="https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostei%20do%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-editorial" id="portfolioCtaBtn">
+              Solicitar Orçamento no WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. CONTATO E LOCALIZAÇÃO -->
+      <section class="contact-section" id="contato">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info fade-up">
+              <span class="section-tag">Atendimento</span>
+              <h2 class="contact-title">LOCALIZAÇÃO & HORÁRIOS</h2>
+
+              <div class="diamonds-separator align-left" aria-hidden="true">
+                ◇ ◇ ◇ ◇ ◇
+              </div>
+
+              <p class="text-muted">
+                O estúdio fica em um espaço reservado na região central de São Paulo, projetado para proporcionar conforto acústico e concentração criativa durante todo o procedimento.
+              </p>
+
+              <!-- Cards Elevados com Fundo mais Claro e Ícones Line Dourados -->
+              <div class="contact-cards-container">
+                <!-- Endereço -->
+                <div class="contact-elevated-card" id="cardAddress">
+                  <div class="contact-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-card-text">
+                    <h4>Endereço do Estúdio</h4>
+                    <p>
+                      <strong>Rua Augusta, 1420 — Conjunto 4B</strong><br />
+                      Consolação, São Paulo - SP &bull; CEP 01304-001<br />
+                      <span style="font-size: 0.8rem; color: var(--text-muted);">Próximo às estações Consolação e Paulista</span>
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Horário de Funcionamento -->
+                <div class="contact-elevated-card" id="cardHours">
+                  <div class="contact-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-card-text" style="width: 100%;">
+                    <h4>Horário de Funcionamento</h4>
+                    <ul class="schedule-table">
+                      <li><span>Terça a Sexta</span> <strong>12:00 às 20:00</strong></li>
+                      <li><span>Sábado</span> <strong>10:00 às 19:00</strong></li>
+                      <li><span>Domingo e Segunda</span> <span class="status-closed">Fechado para criações autorais</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Contato Direto -->
+                <div class="contact-elevated-card" id="cardDirectContact">
+                  <div class="contact-card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-card-text">
+                    <h4>Agendamentos & Contato</h4>
+                    <p>
+                      WhatsApp: <strong>+55 (11) 99876-5432</strong><br />
+                      E-mail: contato@santotraco.com.br
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Painel do Mapa Simétrico com Link para Google Maps -->
+            <div class="contact-map-wrapper fade-up">
+              <div class="map-elevated-panel">
+                <div class="map-panel-header">
+                  <span>Localização Geográfica</span>
+                  <span style="color: var(--text-muted); font-size: 0.75rem;">Consolação &bull; SP</span>
+                </div>
+
+                <div class="map-panel-body">
+                  <div class="map-panel-pin">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+
+                  <h4>SANTO TRAÇO STUDIO</h4>
+                  <p>Rua Augusta, 1420 &bull; São Paulo, SP</p>
+
+                  <!-- Link direto para o Google Maps abrindo em nova aba -->
+                  <a
+                    href="https://maps.google.com/?q=Rua+Augusta,+1420+-+Consola%C3%A7%C3%A3o,+S%C3%A3o+Paulo+-+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-editorial"
+                    id="linkGoogleMaps"
+                  >
+                    Abrir no Google Maps
+                  </a>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.25rem; padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-card); border-radius: 4px;">
+                <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6;">
+                  <strong class="text-gold">Acesso & Transporte:</strong> Estacionamento no edifício conveniado ao lado (nº 1445). Acesso rápido via Linha 2-Verde (Estação Consolação) e Linha 4-Amarela (Estação Paulista).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 5. BOTÃO DE WHATSAPP FLUTUANTE (FIXO NO CANTO INFERIOR DIREITO) -->
+    <aside aria-label="Contato Rápido WhatsApp">
+      <a
+        href="https://wa.me/5511998765432?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20uma%20tatuagem."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp-floating-btn"
+        id="floatingWhatsappBtn"
+        title="Falar no WhatsApp"
+      >
+        <span class="whatsapp-pill-label">Agendar no WhatsApp</span>
+        <div class="whatsapp-icon-circle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+          </svg>
+        </div>
+      </a>
+    </aside>
+
+    <!-- 6. RODAPÉ (SÓBRIO & EDITORIAL) -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3 class="logo-text">SANTO<span>TRAÇO</span></h3>
+            <p>
+              Estúdio de tatuagem autoral com estética editorial sóbria. Criações exclusivas em Fine Line, Realismo, Blackwork e Old School.
+            </p>
+          </div>
+
+          <div class="footer-nav-col">
+            <h5>Navegação</h5>
+            <ul class="footer-links-list">
+              <li><a href="#hero">Início</a></li>
+              <li><a href="#sobre">Sobre o Estúdio</a></li>
+              <li><a href="#portfolio">Portfólio por Estilos</a></li>
+              <li><a href="#contato">Localização & Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <h5>Canais Oficiais</h5>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem;">
+              Acompanhe publicações semanais e aberturas de agenda:
+            </p>
+            <div class="social-links-row">
+              <!-- Instagram -->
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-line-btn" title="Instagram" id="socialInstagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
+              <!-- Pinterest -->
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-line-btn" title="Pinterest" id="socialPinterest">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="8" x2="12" y2="16"></line>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </a>
+              <!-- TikTok -->
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-line-btn" title="TikTok" id="socialTiktok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                </svg>
+              </a>
+              <!-- WhatsApp -->
+              <a href="https://wa.me/5511998765432" target="_blank" rel="noopener noreferrer" class="social-line-btn" title="WhatsApp" id="socialWhatsapp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <span>&copy; 2026 SANTO TRAÇO TATTOO STUDIO. Todos os direitos reservados.</span>
+          <span>Rua Augusta, 1420 &bull; Consolação &bull; São Paulo, SP</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL LIGHTBOX SIMÉTRICO EDITORIAL -->
+    <div class="modal-backdrop" id="tattooModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-card">
+        <button type="button" class="modal-close-icon" id="modalCloseIcon" aria-label="Fechar modal">✕</button>
+        <div class="modal-image-box">
+          <img src="" alt="Trabalho selecionado" id="modalImage" />
+        </div>
+        <div class="modal-text-box">
+          <div>
+            <span class="card-category-tag" id="modalCategory">Estilo</span>
+            <h3 class="card-title" id="modalTitle">Título da Tatuagem</h3>
+            <div class="diamonds-separator align-left" style="margin: 0.75rem 0;" aria-hidden="true">
+              ◇ ◇ ◇ ◇ ◇
+            </div>
+            <p id="modalDesc">Descrição técnica e conceitual do projeto autoral.</p>
+          </div>
+          <div>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-editorial" id="modalWaBtn" style="width: 100%;">
+              Orçar Projeto no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script Puro Vanilla JS -->
+    <script type="module" src="./src/script.js"></script>
+  </body>
+</html>

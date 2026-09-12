@@ -1,0 +1,6 @@
+{
+  "name": "Santo Traço Tattoo Studio",
+  "description": "Landing page dark elegante e editorial para estúdio de tatuagem com apresentação, portfólio simétrico filtrável por estilos (Fine Line, Realismo, Blackwork, Old School), localização e agendamento via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
